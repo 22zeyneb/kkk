@@ -1,0 +1,41 @@
+﻿<Window x:Class="WpfApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="Satış Sayfası
+" Height="450" Width="800">
+    <Grid x:Name="Satış_Sayfası" Background="#FFDFCFDC">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250*"/>
+            <ColumnDefinition Width="519*"/>
+            <ColumnDefinition Width="11*"/>
+            <ColumnDefinition Width="20"/>
+        </Grid.ColumnDefinitions>
+        <GroupBox HorizontalAlignment="Left" Height="101" Header="Müşteri Ekleme" Margin="27,0,0,238" VerticalAlignment="Bottom" Width="208" Background="#FFCB90A7">
+            <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" Text="TextBox" Width="120" Height="17.96" Background="#FFFFE0E0" Margin="68,30,0,0"/>
+        </GroupBox>
+        <GroupBox HorizontalAlignment="Left" Height="141" Header="Ürün İşlemleri" Margin="26,213,0,0" VerticalAlignment="Top" Width="209" Background="#FFCB90A7"/>
+        <DataGrid HorizontalAlignment="Left" Height="275" Margin="10,95,0,0" VerticalAlignment="Top" Width="401" d:ItemsSource="{d:SampleData ItemCount=5}" Background="#FFA58787" Grid.Column="1"/>
+        <TextBox HorizontalAlignment="Left" Margin="105,102,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.967,1.171" Background="#FFFFE0E0"/>
+        <Label Content="Adı Soyadı" HorizontalAlignment="Left" Height="26" Margin="42,98,0,0" VerticalAlignment="Top" Width="72"/>
+        <Label Content="Telefon No" HorizontalAlignment="Left" Height="28" Margin="42,132,0,0" VerticalAlignment="Top" Width="68"/>
+        <Label Content="Barkod No" HorizontalAlignment="Left" Height="28" Margin="37,266,0,0" VerticalAlignment="Top" Width="66"/>
+        <TextBox HorizontalAlignment="Left" Height="18" Margin="105,271,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" Background="#FFFFE0E0"/>
+        <TextBox HorizontalAlignment="Left" Height="17" Margin="105,243,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" Background="#FFFFE0E0"/>
+        <Label Content="Ürün Adı" HorizontalAlignment="Left" Height="29" Margin="43,237,0,0" VerticalAlignment="Top" Width="60"/>
+        <TextBox HorizontalAlignment="Left" Height="18" Margin="105,300,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" Background="#FFFFE0E0" RenderTransformOrigin="-0.567,2.758"/>
+        <Label Content="Ürün Miktarı&#xD;&#xA;" HorizontalAlignment="Left" Height="24" Margin="30,294,0,0" VerticalAlignment="Top" Width="80" RenderTransformOrigin="0.494,0.356"/>
+        <Button Content="Ekle" HorizontalAlignment="Left" Height="24" Margin="25,384,0,0" VerticalAlignment="Top" Width="40" Grid.Column="1"/>
+        <Button Content="Sil" HorizontalAlignment="Left" Height="24" Margin="424,107,0,0" VerticalAlignment="Top" Width="67" Grid.Column="1"/>
+        <Button Content="Satış İptal" HorizontalAlignment="Left" Height="24" Margin="424,143,0,0" VerticalAlignment="Top" Width="67" Grid.Column="1"/>
+        <Button Content="Satış Yap" HorizontalAlignment="Left" Height="24" Margin="339,384,0,0" VerticalAlignment="Top" Width="52" Grid.Column="1"/>
+        <Button Content="Müşteri Ekleme" HorizontalAlignment="Left" Height="30" Margin="28,30,0,0" VerticalAlignment="Top" Width="100"/>
+        <Button Content="Müşteri Listeleme" HorizontalAlignment="Left" Height="30" Margin="136,30,0,0" VerticalAlignment="Top" Width="100"/>
+        <Button Grid.Column="1" Content="Ürün Ekleme" HorizontalAlignment="Left" Height="30" Margin="25,30,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button Grid.Column="1" Content="Ürün Listeleme" HorizontalAlignment="Left" Height="30" Margin="150,30,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button Grid.Column="1" Content="Satış Listeleme" HorizontalAlignment="Left" Height="30" Margin="313,30,0,0" VerticalAlignment="Top" Width="120"/>
+    </Grid>
+</Window>
